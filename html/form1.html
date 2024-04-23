@@ -1,28 +1,27 @@
-<form>
+<form action=""method='post'>
 <h1>설문조사</h1>
 <hr>
 
 안녕하십니까 한국국토정보공사입니다. 저희 회사에서는 여러분의 컴퓨터 관심분야에 대한 설문을 조사중입니다.<br>
-여러분의 많은 참여 부탁드립니다. 좋은하루 되세요.<br>
+여러분의 많은 참여 부탁드립니다. 좋은하루 되세요.<br><br><br>
 
 
-</form>
 <table border=1>
  <tr>
  <th>성명</th> 
- <td><input type='text'></td>
+ <td><input type='text' required></td>
  <th>연락처</th> 
- <td><input type='text'></td>
+ <td><input type='tel' pattern='[0-9]{3}-[0-9]{4}-[0-9]{4}' placeholder='010-1234-5678' required></td>
  <th>이메일</th> 
- <td><input type='text'></td>
+ <td><input type='EMAIL' placeholder='abc@example.com' required></td>
  </tr>
  <tr>
  <th>학교</th> 
- <td><input type='text'></td>
+ <td><input type='text' required></td>
  <th>학년</th> 
- <td><input type='text'></td>
+ <td><input type='number' MIN=1 MAX=6 required></td>
  <th>학과</th> 
- <td><input type='text'></td>
+ <td><input type='text' required></td>
  </tr>
 <tr>
  <th>성별</th> 
@@ -31,38 +30,38 @@
 <option values='2'>여</option>
 </select></td>
  <th>생년월일</th> 
- <td><input type='date'></td>
+ <td><input type='date' required></td>
  </tr>
 </table>
 <br>
 <br>
 
 1. <b>주로 이용하는 컴퓨터 사이트는 어디입니까?</b><br>
-<input type='radio' name ='hobby' value='춤'>게임
-<input type='radio' name ='hobby' value='게임'>음악
-<input type='radio' name ='hobby' value='독서'>채팅
-<input type='radio' name ='hobby' value='독서'>기타(<td><input type='text'></td>)
+<input type='radio' name ='hobby' value='춤' required>게임
+<input type='radio' name ='hobby' value='게임'required>음악
+<input type='radio' name ='hobby' value='독서'required>채팅
+<input type='radio' name ='hobby' value='독서'required>기타(<td><input type='text'></td>)
 <br>
 2. <b>관심있는 컴퓨터 분야는 어디입니까?</b><br>
-<input type='radio' name ='hobby1' value='춤'>그래픽
-<input type='radio' name ='hobby1' value='게임'>프로그램
-<input type='radio' name ='hobby1' value='독서'>자격증
-<input type='radio' name ='hobby1' value='독서'>기타(<td><input type='text'></td>)
+<input type='radio' name ='hobby1' value='춤' required>그래픽
+<input type='radio' name ='hobby1' value='게임' required>프로그램
+<input type='radio' name ='hobby1' value='독서' required>자격증
+<input type='radio' name ='hobby1' value='독서' required>기타(<td><input type='text'></td>)
 <br>
 2. <b>만약 컴퓨터를 배운다면 어느쪽으로 하고싶습니까?</b><br>
-<input type='radio' name ='hobby2' value='춤'>그래픽
-<input type='radio' name ='hobby2' value='게임'>프로그램
-<input type='radio' name ='hobby2' value='독서'>자격증
-<input type='radio' name ='hobby2' value='독서'>기타(<td><input type='text'></td>)
+<input type='radio' name ='hobby2' value='춤'required>그래픽
+<input type='radio' name ='hobby2' value='게임'required>프로그램
+<input type='radio' name ='hobby2' value='독서'required>자격증
+<input type='radio' name ='hobby2' value='독서'required>기타(<td><input type='text'></td>)
 
 <br>
 <br>
 <br>
-<button>제출</button>
+<button type='submit'>제출</button>
 <br>
 <br>
 <br>
 
 설문에 응해주셔서 감사합니다.
 
-</table>
+</form>
